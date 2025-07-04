@@ -1,0 +1,22 @@
+{
+  "name": "django-container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
+  "remoteUser": "django-user",
+  "settings": {
+    // "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "python.defaultInterpreterPath": "/py/bin/python",
+    "python.formatting.provider": "black",
+    "black.formatter.path": "/py/bin/black",
+    "editor.formatOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.flake8"
+  ],
+  "postCreateCommand": "/py/bin/pip install -r requirements.txt"
+}

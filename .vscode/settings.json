@@ -1,0 +1,12 @@
+{
+  // "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "python.defaultInterpreterPath": "/py/bin/python",
+  "python.formatting.provider": "black",
+  "black.formatter.path": "/py/bin/black",
+  "editor.formatOnSave": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "remote.containers.useWSL": false,
+  "remote.SSH.useLocalServer": false
+}
+
